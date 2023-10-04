@@ -24,7 +24,7 @@ Opérateurs :
 
 */
 
-$calcul = $x % $y;
+$calcul = $x / $z;
 
 dd($calcul);
 
