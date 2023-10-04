@@ -47,11 +47,18 @@ $i = 0;
 
 // $i--; // $i = $i - 1;
 
-$naissance = 1986;
+// $naissance = 1986;
 
-$age = date ('Y')- $naissance;
+// $age = date ('Y')- $naissance;
 
 
-dd($age);
+// dd($age);
+
+$paht = 34;
+$tva = 10;
+
+$pvttc=$paht+($paht*$tva/100);
+
+dd($pvttc);
 
 require './index.vue.php';
