@@ -80,6 +80,16 @@ $tableau = [
 
 // dbug($titre);
 
+define('USER', 'John Doe');
+define('NOTES', [12, 16, 2, 6]);
+define('ONLINE', true);
+define('AGE', 8);
+
+dd(AGE);
+
+
+
+// dd(USER);
 
 
 
