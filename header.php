@@ -15,6 +15,6 @@
 
 <?php
 
-$titre = 'Titre!';
+$titre = 'un Titre dans header.php';
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 // "include './header.php';" équivaut strictement à "include('./header.php');"
-
+require './fonctions.php';
 require './header.php'; //contrairement à include, require arrête le code en présence d'erreur
 
 //Un commentaire sur une seule ligne
@@ -54,9 +54,36 @@ $resultat .= 'Ceppic PHP';
 $resultat .= '</h1>';
 echo $resultat;*/
 
-echo $titre; //$titre a été déclarée dans header.php
+// echo $titre; //$titre a été déclarée dans header.php
+
+//$tableau=array()
+
+$tableau = [
+    'groupe',
+    23,
+    4.5,
+    false,
+    [1, 2, 3]
+];
+
+// echo '<pre>';
+// var_dump($tableau);
+// echo '</pre>';
+
+// echo '<pre>';
+// print_r($tableau);
+// echo '</pre>';
+
+dbug($tableau);
+
+dbug($titre);
+
+?>
+<h3><?= $titre ?></h3>
 
 
-
+<?php
 
 require('./footer.php');
+
+// echo $titre;
