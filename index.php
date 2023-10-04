@@ -47,7 +47,11 @@ $i = 0;
 
 // $i--; // $i = $i - 1;
 
+$naissance = 1986;
 
-dd($i);
+$age = date ('Y')- $naissance;
+
+
+dd($age);
 
 require './index.vue.php';
