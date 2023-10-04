@@ -9,7 +9,7 @@ require './header.php'; //contrairement à include, require arrête le code en p
 /* Commentaire sur
 plusieurs lignes*/
 
-echo "<h1>Cours PHP</h1>";
+// echo "<h1>Cours PHP</h1>";
 
 $variable = 'une variable quelconque, ici une chaîne de caractères';
 $Variable = 'Une Autre Variable';
@@ -74,14 +74,14 @@ $tableau = [
 // print_r($tableau);
 // echo '</pre>';
 
-dbug("Test");
+// dbug("Test");
 
-dbug($tableau);
+dd($tableau);
 
 dbug($titre);
 
 ?>
-<h3><?= $titre ?></h3>
+<!-- <h3><?//= $titre ?></h3> -->
 
 
 <?php

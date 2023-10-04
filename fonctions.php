@@ -7,3 +7,9 @@ function dbug($value)
     //var_dump($value);
     echo '</pre>';
 }
+
+function dd($value) //dd pour debud and die
+{
+    dbug($value);
+    die('Script PHP arrêté !!!');
+}
