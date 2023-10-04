@@ -74,6 +74,8 @@ $tableau = [
 // print_r($tableau);
 // echo '</pre>';
 
+dbug("Test");
+
 dbug($tableau);
 
 dbug($titre);
