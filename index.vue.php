@@ -13,7 +13,7 @@
 
 <body>
 
-    <h1><?= $titre ?></h1> <!-- TITRE !!! ...pardon. -->
+    <h1><?= $titre ?></h1>
 
 </body>
 
