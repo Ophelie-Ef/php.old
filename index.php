@@ -15,15 +15,17 @@ $z = 5;
 /* 
 
 Opérateurs :
-+
--
-*
-/
-**
-%
++ //addition
+- //soustraction
+* //multiplication
+/ //division
+** //exposant (aka puissance)
+% //modulo (reste de la division)
 
 */
 
+$calcul = $x % $y;
 
+dd($calcul);
 
 require './index.vue.php';
