@@ -76,9 +76,12 @@ $tableau = [
 
 // dbug("Test");
 
-dd($tableau);
+// dd($tableau);
 
-dbug($titre);
+// dbug($titre);
+
+
+
 
 ?>
 <!-- <h3><?//= $titre ?></h3> -->
