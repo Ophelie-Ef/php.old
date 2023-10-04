@@ -1,15 +1,62 @@
 <?php
 
-include('./header.php');
+// "include './header.php';" équivaut strictement à "include('./header.php');"
 
+require './header.php'; //contrairement à include, require arrête le code en présence d'erreur
+
+//Un commentaire sur une seule ligne
+
+/* Commentaire sur
+plusieurs lignes*/
 
 echo "<h1>Cours PHP</h1>";
-?>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis eveniet doloribus, aliquam amet ex non aperiam corrupti voluptatibus hic nisi cumque officia minus odit impedit esse ipsam quas praesentium rem?</p>
+$variable = 'une variable quelconque, ici une chaîne de caractères';
+$Variable = 'Une Autre Variable';
 
-<?php
-echo "Encore le cours PHP";
+//Attention à la casse
 
-include('./footer.php');
-?>
+//echo $variable , $Variable; //On utilise rarement la virgule, et on lui préfère le point.
+// echo $variable . " " . $Variable; //  . " " . rajouté pour créer l'espace entre les deux variables à l'affichage 
+
+$camelCase = 'une variable en camel case'; //ou lowerCamelCase
+$snake_case = 'une variable en snake case';
+$PascalCase = 'une variable en Pascal case'; //ou UpperCamelCase
+// $kebab-case = 'une variable en kebab case'; non utilisable en PHP
+
+$nombre = 45;
+$nombreDecimal = 10.5;
+$boolean = false;
+
+// print_r($nombre);
+// var_dump($nombre);
+// var_dump($nombreDecimal);
+// var_dump($boolean);
+// var_dump($variable);
+// print_r($variable);
+
+$fruit1 = 'pomme';
+$fruit2 = 'banane'; //si on refait $fruit1 = 'banane'; à la place de $fruit2 = 'banane'; la valeur banane écrase la valeur pomme
+
+// echo "<p>$fruit1<br>$fruit2</p>"; //echo '<p>$fruit1<br>$fruit2</p>'; ne fonctionne pas !
+// echo "<p>$fruit1"."<br>"."$fruit2</p>";
+// echo '<p>' . $fruit1 .'<br>'.$fruit2 .'</p>'; // <--- version prise de tête !!!
+
+//Aujourd'hui il fait beau
+
+// echo "Aujourd'hui il fait beau";
+// echo 'Aujourd'hui il fait beau'; ne fonctionne pas sans échappement : \ (altgr+8)
+// echo 'Aujourd\'hui il fait beau';
+
+/*$resultat = '';
+$resultat .= '<h1>';
+$resultat .= 'Ceppic PHP';
+$resultat .= '</h1>';
+echo $resultat;*/
+
+echo $titre; //$titre a été déclarée dans header.php
+
+
+
+
+require('./footer.php');

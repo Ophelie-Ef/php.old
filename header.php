@@ -12,3 +12,9 @@
 
 
 <body>
+
+<?php
+
+$titre = 'Titre!';
+
+?>
