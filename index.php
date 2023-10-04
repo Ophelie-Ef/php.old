@@ -18,6 +18,8 @@ array_push($tab1, 'Voiture', 10.5, [45, true, 'Truc']);
 
 $tabFusion = array_merge($tab1, $notes);
 
-dd($tabFusion);
+dbug($tabFusion);
+
+dd($tabFusion[5][2]);
 
 require './index.vue.php';
