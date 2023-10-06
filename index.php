@@ -138,18 +138,18 @@ $jsonPersonArrayPhp = json_decode($jsonPerson, true);
 
 //sans le 'true', le résultat serait un objet et non iun tableau
 
-dd($jsonPersonArrayPhp);
+dbug($jsonPersonArrayPhp);
 
 //Afficher une card pour cette personne :
 
 ?>
 
 <figure>
-    <img src="" alt="Albert le 5e Mousquetaire">
+    <img src="<?=$jsonPersonArrayPhp['image']?>" alt="Albert le 5e Mousquetaire">
         <figcaption>
             <ul>
-                <li><!--Nom - Prenom--></li>
-                <li><!--Email--></li>
+                <li><?=$jsonPersonArrayPhp['prenom']." - ".$jsonPersonArrayPhp['nom']?> <!--Prenom - Nom--></li>
+                <li><?=$jsonPersonArrayPhp['email']?><!--Email--></li>
             </ul>
         </figcaption>
     </img>
