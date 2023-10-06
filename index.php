@@ -70,5 +70,7 @@ arsort
 krsort
 */
 
+sort($planetes);
+dd($planetes);
 
 // require './index.vue.php';
