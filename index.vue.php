@@ -27,21 +27,27 @@
     //     echo ucwords($planet) . '<br>';
     // }
 
-    foreach ($planetes as $clef => $valeur) {
-        echo $clef . ' : ' . $valeur . '<br>';
-    }
+    // foreach ($planetes as $clef => $valeur) {
+    //     echo $clef . ' : ' . $valeur . '<br>';
+    // }
 
-    echo '<hr>';
+    // echo '<hr>';
 
-    foreach ($planetes2 as $clef => $valeur) {
-        echo $clef . ' : ' . $valeur . '<br>';
-    }
+    // foreach ($planetes2 as $clef => $valeur) {
+    //     echo $clef . ' : ' . $valeur . '<br>';
+    // }
 
-    echo '<hr>';
+    // echo '<hr>';
 
-    foreach ($planetes2 as $clef => $valeur) :
-        echo $clef . ' : ' . $valeur . '<br>';
-    endforeach
+    // foreach ($planetes2 as $clef => $valeur) :
+    //     echo $clef . ' : ' . $valeur . '<br>';
+    // endforeach
+
+    dbug($user);
+
+    foreach ($user as $key => $value) :
+        echo $key . ' : ' . $value;
+    endforeach; //bug car on passe d'une chaine à un tableau au moment de passer aux compétences
 
     ?>
 
