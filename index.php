@@ -159,11 +159,11 @@ $titre = 'Tableaux PHP';
 */
 //API
 
-$urlApi = 'https://pokeapi.co/api/v2/pokemon/ditto';
+$urlPokeApi = 'https://pokeapi.co/api/v2/pokemon/ditto';
 
-$jsonEmployees = file_get_contents($urlApi);
+$jsonPokemon = file_get_contents($urlPokeApi);
 
-dd($jsonEmployees);
+dd($jsonPokemon);
 
 
 // require './index.vue.php';
