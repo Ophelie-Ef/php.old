@@ -37,6 +37,12 @@
         echo $clef . ' : ' . $valeur . '<br>';
     }
 
+    echo '<hr>';
+
+    foreach ($planetes2 as $clef => $valeur) :
+        echo $clef . ' : ' . $valeur . '<br>';
+    endforeach
+
     ?>
 
 </body>
