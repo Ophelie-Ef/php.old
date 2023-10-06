@@ -4,22 +4,32 @@ require './fonctions.php';
 
 $titre = 'Tableaux PHP';
 
-$tab1 = [ ];
+//TABLEAUX INDEXES
 
-$notes = [12, 14, 6, 10 ];
+// $tab1 = [ ];
 
-$tab1[] = 'Janvier';
+// $notes = [12, 14, 6, 10 ];
 
-$tab1[] = 45;
+// $tab1[] = 'Janvier';
 
-$tab1[] = true;
+// $tab1[] = 45;
 
-array_push($tab1, 'Voiture', 10.5, [45, true, 'Truc']);
+// $tab1[] = true;
 
-$tabFusion = array_merge($tab1, $notes);
+// array_push($tab1, 'Voiture', 10.5, [45, true, 'Truc']);
 
-dbug($tabFusion);
+// $tabFusion = array_merge($tab1, $notes);
 
-dd($tabFusion[5][2]);
+// dbug($tabFusion);
+
+// dd($tabFusion[5][2]);
+
+//TABLEAUX ASSOCIATIFS
+
+$fruits = [
+    'banane' => 'jaune',
+    'pomme' => 'rouge',
+    'kiwi' => 'vert'
+];
 
 require './index.vue.php';
