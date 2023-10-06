@@ -19,8 +19,12 @@
     <?php
 
 
-    foreach ($planetes as $planete) {
-        echo ucwords($planete) . '<br>';
+    // foreach ($planetes as $planete) {
+    //     echo ucwords($planete) . '<br>';
+    // }
+
+    foreach ($planetes2 as $planet) {
+        echo ucwords($planet) . '<br>';
     }
 
     ?>
