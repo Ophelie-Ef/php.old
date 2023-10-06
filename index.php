@@ -91,25 +91,25 @@ $titre = 'Tableaux PHP';
 
 // dd($tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]);
 
-$person1 = [
-    'nom' => 'Carle',
-    'prenom' => 'Awa',
-    'email' => 'cawa@wahoo.com'
-];
+// $person1 = [
+//     'nom' => 'Carle',
+//     'prenom' => 'Awa',
+//     'email' => 'cawa@wahoo.com'
+// ];
 
-$people = [
-    $person1,
-    [
-        'nom' => 'Mourad',
-        'prenom' => 'Michel',
-        'email' => 'moumi@caramail.com'
-    ],
-    [
-        'nom' => 'Dupond',
-        'prenom' => 'Lucie',
-        'email' => 'ludo@gimayle.com'
-    ]
-];
+// $people = [
+//     $person1,
+//     [
+//         'nom' => 'Mourad',
+//         'prenom' => 'Michel',
+//         'email' => 'moumi@caramail.com'
+//     ],
+//     [
+//         'nom' => 'Dupond',
+//         'prenom' => 'Lucie',
+//         'email' => 'ludo@gimayle.com'
+//     ]
+// ];
 
 
 // Afficher les phrases suivantes :
@@ -122,8 +122,20 @@ $people = [
 
 // dbug('L\'email de ' . $people[1]['prenom'] . " " . strtoupper($people[1]['nom']) . ' est ' . $people[1]['email'] . '.');
 
-$jsonPeople = json_encode($people);
+// $jsonPeople = json_encode($people);
 
-dd($jsonPeople);
+// dd($jsonPeople);
+
+$jsonPerson = '{
+    "nom" : "Lecinquièmemousquetaire",
+    "prenom" : "Albert",
+    "email" : "mousqualbert@wanadoo.fr",
+    "couleur" : ["rouge", "vert", "cyan"],
+    "image" : "https://ximg.es/128x128/000/fff"
+}';
+
+$jsonPersonArrayPhp = json_decode($jsonPerson);
+
+dd($jsonPersonArrayPhp);
 
 // require './index.vue.php';
