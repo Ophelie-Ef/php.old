@@ -18,31 +18,6 @@
 
     <?php
 
-
-    // foreach ($planetes as $planete) {
-    //     echo ucwords($planete) . '<br>';
-    // }
-
-    // foreach ($planetes2 as $planet) {
-    //     echo ucwords($planet) . '<br>';
-    // }
-
-    // foreach ($planetes as $clef => $valeur) {
-    //     echo $clef . ' : ' . $valeur . '<br>';
-    // }
-
-    // echo '<hr>';
-
-    // foreach ($planetes2 as $clef => $valeur) {
-    //     echo $clef . ' : ' . $valeur . '<br>';
-    // }
-
-    // echo '<hr>';
-
-    // foreach ($planetes2 as $clef => $valeur) :
-    //     echo $clef . ' : ' . $valeur . '<br>';
-    // endforeach
-
     dbug($user);
 
     foreach ($user as $key => $value) :
