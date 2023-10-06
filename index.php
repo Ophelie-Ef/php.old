@@ -136,6 +136,25 @@ $jsonPerson = '{
 
 $jsonPersonArrayPhp = json_decode($jsonPerson);
 
-dd($jsonPersonArrayPhp);
+// dd($jsonPersonArrayPhp);
+
+//Afficher une card pour cette personne :
+
+?>
+
+<figure>
+    <img src="" alt="">
+        <figcaption>
+            <ul>
+                <li><!--Nom - Prenom--></li>
+                <li><!--Email--></li>
+            </ul>
+        </figcaption>
+    </img>
+</figure>
+
+<?php
+
+
 
 // require './index.vue.php';
