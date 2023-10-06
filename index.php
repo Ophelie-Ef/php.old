@@ -27,9 +27,22 @@ $titre = 'Tableaux PHP';
 //TABLEAUX ASSOCIATIFS
 
 $fruits = [
+    //'clef' => 'valeur',
     'banane' => 'jaune',
     'pomme' => 'rouge',
     'kiwi' => 'vert'
 ];
+
+// // dd($fruits['pomme']);
+
+$fruits['poire'] = 'caca d\'oie';
+
+// dd($fruits);
+
+// $chaine = implode(",",$fruits);
+
+// dd($chaine);
+
+
 
 require './index.vue.php';
