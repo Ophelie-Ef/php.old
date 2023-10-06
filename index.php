@@ -157,10 +157,11 @@ $titre = 'Tableaux PHP';
  </figure>
  <?php
 */
+//API
 
+$urlApi = 'https://pokeapi.co/api/v2/pokemon/ditto';
 
-
-$jsonEmployees = file_get_contents('https://pokeapi.co/api/v2/pokemon/ditto');
+$jsonEmployees = file_get_contents($urlApi);
 
 dd($jsonEmployees);
 
