@@ -47,30 +47,44 @@ $titre = 'Tableaux PHP';
 
 // dd($fruits2); //explode crée un tableau indexé à partir d'une chaîne de carctères ( scinde une chaîne de caractères en segments )
 
-$planetes = ['mars','terre','uranus','venus','jupiter','mercure'];
+// $planetes = ['mars','terre','uranus','venus','jupiter','mercure'];
 
-$planetes2 =[
-    "m"=> 'mars',
-    't'=> 'terre',
-    'u'=> 'uranus',
-    'v'=> 'venus',
-    'j'=> 'jupiter',
-    'm'=> 'mercure'
-];
+// $planetes2 =[
+//     "m"=> 'mars',
+//     't'=> 'terre',
+//     'u'=> 'uranus',
+//     'v'=> 'venus',
+//     'j'=> 'jupiter',
+//     'n'=> 'mercure'
+// ];
 
-dbug($planetes);
-dbug($planetes2);
+// // dbug($planetes);
+// // dbug($planetes2);
 
-/*
-sort
-asort
-rsot
-ksort
-arsort
-krsort
-*/
+// /*
+// sort
+// asort
+// rsot
+// ksort
+// arsort
+// krsort
+// */
 
-sort($planetes);
-dd($planetes);
+// asort($planetes2);
+// dd($planetes2);
+
+$tab = [];
+$tab[] = ['A', 'B', 'C'];
+$tab[] = ['Q','R','T'];
+$tab[] = ['E','U','P','I'];
+
+dbug($tab);
+
+$motab = [];
+$motab = [$tab[0][2], $tab[2][0], $tab[2][2], $tab[2][2], $tab[2][3], $tab[0][2]];
+
+$mot= implode("",$motab);
+
+dbug($mot);
 
 // require './index.vue.php';
