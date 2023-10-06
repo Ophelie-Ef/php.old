@@ -73,22 +73,53 @@ $titre = 'Tableaux PHP';
 // asort($planetes2);
 // dd($planetes2);
 
-$tab = [];
-$tab[] = ['A', 'B', 'C'];
-$tab[] = ['Q','R','T'];
-$tab[] = ['E','U','P','I'];
+// $tab = [];
+// $tab[] = ['A', 'B', 'C'];
+// $tab[] = ['Q','R','T'];
+// $tab[] = ['E','U','P','I'];
 
-dbug($tab);
+// dbug($tab);
 
-$motab = [];
-$motab = [$tab[0][2], $tab[2][0], $tab[2][2], $tab[2][2], $tab[2][3], $tab[0][2]];
+// $motab = [];
+// $motab = [$tab[0][2], $tab[2][0], $tab[2][2], $tab[2][2], $tab[2][3], $tab[0][2]];
 
-$mot= implode("",$motab);
+// $mot= implode("",$motab);
 
-dbug($mot);
+// dbug($mot);
 
-//correction
+// //correction
 
-dd($tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]);
+// dd($tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]);
+
+$person1 = [
+    'nom' => 'Carle',
+    'prenom' => 'Awa',
+    'email' => 'cawa@wahoo.com'
+];
+
+$people = [
+    $person1,
+    [
+        'nom' => 'Mourad',
+        'prenom' => 'Michel',
+        'email' => 'moumi@caramail.com'
+    ],
+    [
+        'nom' => 'Dupond',
+        'prenom' => 'Lucie',
+        'email' => 'ludo@gimayle.com'
+    ]
+];
+
+
+// Afficher les phrases suivantes :
+// Le nom de Lucie est Dupond.
+// L'email de Michel MOURAD est moumi@caramail.com.
+
+dbug($people);
+
+echo('Le nom de '.$people[2]['prenom'].' est '.$people[2]['nom'].'.');
+
+echo('<br>'.'L\'email de '.$people[1]['prenom']." ".$people[1]['nom'].' est '.$people[1]['email'].'.');
 
 // require './index.vue.php';
