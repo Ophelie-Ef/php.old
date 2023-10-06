@@ -36,9 +36,26 @@ $age = 20;
 // endif;
 
 
-$heure = 23;
+// $heure = 19;
+$heure = date('H');
+
+// dd($heure);
+
+// if ($heure <= 12) :
+//     echo 'On est le matin';
+
+// elseif ($heure >= 18) :
+//     echo 'On est le soir';
+// else :
+//     echo 'On est l\'après-midi !';
+// endif;
 
 
+$a = 20;
+$b = 5;
 
+if ($b != 3) : //!= est le signe pour "différent de"
+    echo 'La varibale $b n\'est pas égale à 3 !';
+endif;
 
 // require './index.view.php';
