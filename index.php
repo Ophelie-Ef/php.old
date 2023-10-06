@@ -134,16 +134,18 @@ $jsonPerson = '{
     "image" : "https://ximg.es/128x128/000/fff"
 }';
 
-$jsonPersonArrayPhp = json_decode($jsonPerson);
+$jsonPersonArrayPhp = json_decode($jsonPerson, true);
 
-// dd($jsonPersonArrayPhp);
+//sans le 'true', le résultat serait un objet et non iun tableau
+
+dd($jsonPersonArrayPhp);
 
 //Afficher une card pour cette personne :
 
 ?>
 
 <figure>
-    <img src="" alt="">
+    <img src="" alt="Albert le 5e Mousquetaire">
         <figcaption>
             <ul>
                 <li><!--Nom - Prenom--></li>
