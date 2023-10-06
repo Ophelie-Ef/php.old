@@ -124,39 +124,45 @@ $titre = 'Tableaux PHP';
 
 // $jsonPeople = json_encode($people);
 
-// dd($jsonPeople);
+// // dd($jsonPeople);
 
-$jsonPerson = '{
-    "nom" : "Lecinquièmemousquetaire",
-    "prenom" : "Albert",
-    "email" : "mousqualbert@wanadoo.fr",
-    "couleur" : ["rouge", "vert", "cyan"],
-    "image" : "https://ximg.es/128x128/000/fff"
-}';
+// $jsonPerson = '{
+//     "nom" : "Lecinquièmemousquetaire",
+//     "prenom" : "Albert",
+//     "email" : "mousqualbert@wanadoo.fr",
+//     "couleur" : ["rouge", "vert", "cyan"],
+//     "image" : "https://ximg.es/128x128/000/fff"
+// }';
 
-$jsonPersonArrayPhp = json_decode($jsonPerson, true);
+// $jsonPersonArrayPhp = json_decode($jsonPerson, true);
 
-//sans le 'true', le résultat serait un objet et non iun tableau
+// //sans le 'true', le résultat serait un objet et non iun tableau
 
-dbug($jsonPersonArrayPhp);
+// dbug($jsonPersonArrayPhp);
 
-//Afficher une card pour cette personne :
+// //Afficher une card pour cette personne :
 
-?>
+// 
+/* ?>
 
-<figure>
-    <img src="<?=$jsonPersonArrayPhp['image']?>" alt="Albert le 5e Mousquetaire">
-        <figcaption>
-            <ul>
-                <li><?=$jsonPersonArrayPhp['prenom']." - ".$jsonPersonArrayPhp['nom']?> <!--Prenom - Nom--></li>
-                <li><?=$jsonPersonArrayPhp['email']?><!--Email--></li>
-            </ul>
-        </figcaption>
-    </img>
-</figure>
+ <figure>
+     <img src="<?=$jsonPersonArrayPhp['image']?>" alt="Albert le 5e Mousquetaire">
+         <figcaption>
+             <ul>
+                 <li><?=$jsonPersonArrayPhp['prenom']." - ".$jsonPersonArrayPhp['nom']?> <!--Prenom - Nom--></li>
+                 <li><?=$jsonPersonArrayPhp['email']?><!--Email--></li>
+             </ul>
+         </figcaption>
+     </img>
+ </figure>
+ <?php
+*/
 
-<?php
 
+
+$jsonEmployees = file_get_contents('https://pokeapi.co/api/v2/pokemon/ditto');
+
+dd($jsonEmployees);
 
 
 // require './index.vue.php';
