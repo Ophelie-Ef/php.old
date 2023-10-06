@@ -1,28 +1,38 @@
 <?php
-
 require './fonctions.php';
 
-$titre = 'Boucle PHP';
-
-
-// $planetes = ['mars', 'terre', 'uranus', 'venus', 'jupiter', 'mercure'];
-
-// $planetes2 = [
-//     "m" => 'mars',
-//     't' => 'terre',
-//     'u' => 'uranus',
-//     'v' => 'venus',
-//     'j' => 'jupiter',
-//     'n' => 'mercure'
-// ];
+$titre = "Condtions";
 
 $user = [
     'nom' => 'Doupet Lucien',
-    'email' => 'ldoupet@yaya.com',
-    'competence' => ['PHP','React','Python']
+    'email' => 'ldoupe@yaya.com',
+    'competence' => ['php','react','python']
 ];
 
-//Dans l'index.view , afficher dans une ul toutes les données de ce user avec foreach
+// if/else/elseif
+/*
+>
+<
+>=
+<=
+==
+===
+!=
+!==
+*/
+
+$age = 20;
+// if($age >= 18) {
+//     echo 'Peut voter.';
+// } else {
+//     echo 'Ne peut pas voter !';
+// }
 
 
-require './index.vue.php';
+if($age >= 18) :
+    echo 'Peut voter.';
+else:
+    echo 'Ne peut pas voter !';
+endif;
+
+// require './index.view.php';
