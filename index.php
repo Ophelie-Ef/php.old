@@ -120,6 +120,6 @@ dbug($people);
 
 dbug('Le nom de ' . $people[2]['prenom'] . ' est ' . $people[2]['nom'] . '.');
 
-dbug('L\'email de ' . $people[1]['prenom'] . " " . $people[1]['nom'] . ' est ' . $people[1]['email'] . '.');
+dbug('L\'email de ' . $people[1]['prenom'] . " " . strtoupper($people[1]['nom']) . ' est ' . $people[1]['email'] . '.');
 
 // require './index.vue.php';
