@@ -16,16 +16,17 @@
     <h1><?= $titre ?></h1>
 
 
-<?php
+    <?php
 
 
-foreach ($planetes as $planete) {
-    echo ucwords($planete) . '<br>';
-}
+    foreach ($planetes as $planete) {
+        echo ucwords($planete) . '<br>';
+    }
 
-?>
+    ?>
 
 </body>
+
 </html>
 
 <!-- If you understand this :"999 666 88 00 22 777 33 00 666 555 3", then it's as it says ^^  -->

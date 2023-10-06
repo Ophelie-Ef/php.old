@@ -16,5 +16,4 @@ $planetes2 = [
     'n' => 'mercure'
 ];
 
-
 require './index.vue.php';
