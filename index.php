@@ -87,4 +87,8 @@ $mot= implode("",$motab);
 
 dbug($mot);
 
+//correction
+
+dd($tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]);
+
 // require './index.vue.php';
