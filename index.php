@@ -5,15 +5,15 @@ require './fonctions.php';
 $titre = 'Boucle PHP';
 
 
-$planetes = ['mars','terre','uranus','venus','jupiter','mercure'];
+$planetes = ['mars', 'terre', 'uranus', 'venus', 'jupiter', 'mercure'];
 
-$planetes2 =[
-    "m"=> 'mars',
-    't'=> 'terre',
-    'u'=> 'uranus',
-    'v'=> 'venus',
-    'j'=> 'jupiter',
-    'n'=> 'mercure'
+$planetes2 = [
+    "m" => 'mars',
+    't' => 'terre',
+    'u' => 'uranus',
+    'v' => 'venus',
+    'j' => 'jupiter',
+    'n' => 'mercure'
 ];
 
 
