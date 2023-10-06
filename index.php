@@ -45,6 +45,6 @@ $chaine = implode(",", $fruits);
 
 $fruits2 = explode(",", $chaine);
 
-dd($fruits2); //explode crée un tableau indexé à partir d'une chaîne de carctères
+dd($fruits2); //explode crée un tableau indexé à partir d'une chaîne de carctères ( scinde une chaîne de caractères en segments )
 
 require './index.vue.php';
