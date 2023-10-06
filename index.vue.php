@@ -23,8 +23,18 @@
     //     echo ucwords($planete) . '<br>';
     // }
 
-    foreach ($planetes2 as $planet) {
-        echo ucwords($planet) . '<br>';
+    // foreach ($planetes2 as $planet) {
+    //     echo ucwords($planet) . '<br>';
+    // }
+
+    foreach ($planetes as $clef => $valeur) {
+        echo $clef . ' : ' . $valeur . '<br>';
+    }
+
+    echo '<hr>';
+
+    foreach ($planetes2 as $clef => $valeur) {
+        echo $clef . ' : ' . $valeur . '<br>';
     }
 
     ?>
