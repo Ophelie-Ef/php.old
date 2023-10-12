@@ -60,8 +60,8 @@ function dd($value) //dd pour debug and die
 
 // echo $calcul(25);
 
-function calcul (int $a , $b){
+function calcul (int $a , int $b){
     return $a + $b;
 };
 echo calcul (2, 5);
-echo calcul ("2", 5);
+echo calcul ("2", 5);//ne fonctionne pas car char et pas int
