@@ -8,8 +8,18 @@ function dbug($value)
     echo '</pre>';
 }
 
-function dd($value) //dd pour debud and die
+function dd($value) //dd pour debug and die
 {
     dbug($value);
     die('Script PHP arrêté !!!');
 }
+
+function calcul($a , $b)
+{
+    // // echo 'Calcul';
+    // $c = $a+$b;
+    // return $c;
+    return $a + $b;
+};
+
+echo calcul(10,12);
