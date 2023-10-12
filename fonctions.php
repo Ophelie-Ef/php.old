@@ -53,3 +53,8 @@ function dd($value) //dd pour debug and die
 
 // echo calculAge(1987);
 
+$calcul = function ($nb){
+    return $nb + 1;
+};
+
+echo $calcul(25);
