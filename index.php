@@ -11,7 +11,8 @@ dbug($_POST);
 
 
 
-if (isset($_POST['submitted'])):
+// if (isset($_POST['submitted'])):
+if ($_SERVER['REQUEST_METHOD'] === 'POST'):
     echo ('Votre nom est : '.$_POST['nom'].'.');
     echo ('<br>'.'Votre adresse email est : '.$_POST['email'].'.');
     echo ('<br>'.'Vous avez un niveau '.$_POST['niveau']);
