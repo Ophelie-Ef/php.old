@@ -24,12 +24,31 @@ function dd($value) //dd pour debug and die
 // echo calcul(10,12);
 
 
-function calcul($a , $b=12)
-{
-    // // echo 'Calcul';
-    // $c = $a+$b;
-    // return $c;
-    return $a + $b;
-};
+// function calcul($a , $b=12)
+// {
+//     // // echo 'Calcul';
+//     // $c = $a+$b;
+//     // return $c;
+//     return $a + $b;
+// };
 
-echo calcul(10);
+// echo calcul(10);
+
+//creer une fonction qui calcule le PVTTC en lui passant une PAHT et la TVA
+
+function calculPVTTC ($paht,$tva){
+    return $paht + $paht*$tva/100;
+}
+
+echo calculPVTTC(50,20);
+
+//créer une fonction qui calcule l'âge en fonction de la date de naissance
+
+$now = date('Y');
+
+function calculAge ($birth,$now){
+    return $now - $birth;
+}
+
+echo calculAge(1986,$now);
+
