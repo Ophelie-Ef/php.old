@@ -2,12 +2,19 @@
 require './fonctions.php';
 
 // dbug($_GET);
-// dbug($_POST);
+dbug($_POST);
 /* Afficher des phrase avec les informations du formulaire :
     Votre nom est : 
     Votre email est : 
     ....
 */
+
+echo ('Votre nom est : '.$_POST['nom'].'.');
+echo ('<br>'.'Votre adresse email est : '.$_POST['email'].'.');
+echo ('<br>'.'Vous avez un niveau '.$_POST['niveau']);
+echo ('<br>'.'Vous nous avez suggeré : '.$_POST['commentaire']);
+echo ('<br>'.'Votre/vos compétence(s) est/sont : '.implode(", ",$_POST['competence']));
+
 
 ?>
 <!DOCTYPE html>
