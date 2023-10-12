@@ -66,7 +66,7 @@ $heure = date('H');
 // endif;
 
 // $vrai = true;
-$vrai = true;
+// $vrai = true;
 
 // if($vrai):
 //     echo 'Vrai';
@@ -74,7 +74,12 @@ $vrai = true;
 //     echo 'Faux';
 // endif;
 
-echo $vrai? 'Vrai' : 'False';
+// echo $vrai? 'Vrai' : 'False';
 
+$votes = 7500;
+$oldVotes = 1254;
+dbug($votes);
+($votes>$oldVotes) ? $votes-- : $votes++;
+dbug($votes);
 
 // require './index.view.php';
