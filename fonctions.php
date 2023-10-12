@@ -40,15 +40,16 @@ function calculPVTTC ($paht,$tva){
     return $paht + $paht*$tva/100;
 }
 
-echo calculPVTTC(50,20);
+// echo calculPVTTC(34,20);
 
 //créer une fonction qui calcule l'âge en fonction de la date de naissance
 
-$now = date('Y');
 
-function calculAge ($birth,$now){
+
+function calculAge ($birth){
+    $now = date('Y');
     return $now - $birth;
 }
 
-echo calculAge(1986,$now);
+echo calculAge(1986);
 
