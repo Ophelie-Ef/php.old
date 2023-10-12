@@ -82,19 +82,27 @@ require './fonctions.php';
 // ($votes>$oldVotes) ? $votes-- : $votes++;
 // dbug($votes);
 
-$couleur = 'chartreuse';
-switch($couleur){
-    case 'chartreuse':
-        echo 'Vous aimez Defakator';
-        break;
-    case 'cyan':
-        echo 'Vous avez bon goût';
-        break;
-    case 'orange':
-        echo 'Vous êtes une carotte'; 
-        break;
-    default:
-    echo 'Fatal System Error ! Processus d\'autodestruction du PC enclenché...';
+$couleur = 'blouge';
+// switch($couleur){
+//     case 'chartreuse':
+//         echo 'Vous aimez Defakator';
+//         break;
+//     case 'cyan':
+//         echo 'Vous avez bon goût';
+//         break;
+//     case 'orange':
+//         echo 'Vous êtes une carotte'; 
+//         break;
+//     default:
+//     echo 'Fatal System Error ! Processus d\'autodestruction du PC enclenché...';
+// };
+
+$returnValue = match ($couleur) {
+    'chartreuse' => 'Vous aimez Defakator',
+    'cyan' => 'Vous avez bon goût',
+    'orange' => 'Vous êtes une carotte',
+    default => 'Fatal System Error ! Processus d\'autodestruction du PC enclenché...'
 };
+echo $returnValue;
 
 // require './index.view.php';
