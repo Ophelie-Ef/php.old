@@ -1,28 +1,4 @@
-<?php
-require './fonctions.php';
 
-// dbug($_GET);
-dbug($_POST);
-/* Afficher des phrase avec les informations du formulaire :
-    Votre nom est : 
-    Votre email est : 
-    ....
-*/
-
-
-
-// if (isset($_POST['submitted'])):
-if ($_SERVER['REQUEST_METHOD'] === 'POST'):
-    echo ('Votre nom est : '.$_POST['nom'].'.');
-    echo ('<br>'.'Votre adresse email est : '.$_POST['email'].'.');
-    echo ('<br>'.'Vous avez un niveau '.$_POST['niveau']);
-    echo ('<br>'.'Vous nous avez suggeré : '.$_POST['commentaire']);
-    echo ('<br>'.'Votre/vos compétence(s) est/sont : '.implode(", ",$_POST['competence']));
-endif;
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -35,7 +11,7 @@ endif;
 
 <body>
     <h1>Formulaire</h1>
-    <form action="" method="POST">
+    <form action="./traitement.php" method="G">
         <label for="nom">Nom :
             <input type="text" name="nom" placeholder="Votre nom">
         </label>
