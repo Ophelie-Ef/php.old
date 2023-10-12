@@ -8,6 +8,10 @@ require './fonctions.php';
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
-dd($uri);
+// dd($uri);
 
-
+if ($uri === '/php/'):
+    echo 'Je suis à la racine de mon dossier de travail.';
+elseif ($uri ==='php/contact/'):
+    echo 'contact.php';
+endif;
