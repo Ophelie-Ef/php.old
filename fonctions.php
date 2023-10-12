@@ -1,4 +1,5 @@
 <?php
+declare (strict_types=1);
 
 function dbug($value)
 {
@@ -53,8 +54,14 @@ function dd($value) //dd pour debug and die
 
 // echo calculAge(1987);
 
-$calcul = function ($nb){
-    return $nb + 1;
-};
+// $calcul = function ($nb){
+//     return $nb + 1;
+// };
 
-echo $calcul(25);
+// echo $calcul(25);
+
+function calcul (int $a , $b){
+    return $a + $b;
+};
+echo calcul (2, 5);
+echo calcul ("2", 5);
