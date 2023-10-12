@@ -5,7 +5,8 @@ require './fonctions.php';
 // dbug($_POST);
 // dbug($_SERVER);
 // dbug($_REQUEST);
-dbug(htmlspecialchars($_GET['nom'])); //htmlspecialchars permet de ne peas effectuer les scripts rajoutés par les petits malins dans la barre d'adresse.
+// dbug(htmlspecialchars($_GET['nom'])); //htmlspecialchars permet de ne peas effectuer les scripts rajoutés par les petits malins dans la barre d'adresse.
+// dbug(htmlentities($_GET['nom'])); //peu ou prou équivalent ?
 
 
 // if (isset($_POST['submitted'])):
