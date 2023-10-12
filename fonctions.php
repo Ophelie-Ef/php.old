@@ -14,7 +14,17 @@ function dd($value) //dd pour debug and die
     die('Script PHP arrêté !!!');
 }
 
-function calcul($a , $b)
+// function calcul($a , $b)
+// {
+//     // // echo 'Calcul';
+//     // $c = $a+$b;
+//     // return $c;
+//     return $a + $b;
+// };
+// echo calcul(10,12);
+
+
+function calcul($a , $b=12)
 {
     // // echo 'Calcul';
     // $c = $a+$b;
@@ -22,4 +32,4 @@ function calcul($a , $b)
     return $a + $b;
 };
 
-echo calcul(10,12);
+echo calcul(10);
