@@ -36,20 +36,20 @@ function dd($value) //dd pour debug and die
 
 //creer une fonction qui calcule le PVTTC en lui passant une PAHT et la TVA
 
-function calculPVTTC ($paht,$tva){
-    return $paht + $paht*$tva/100;
-}
+// function calculPVTTC ($paht,$tva){
+//     return $paht + $paht*$tva/100;
+// }
 
-// echo calculPVTTC(34,20);
+// // echo calculPVTTC(34,20);
 
-//créer une fonction qui calcule l'âge en fonction de la date de naissance
+// //créer une fonction qui calcule l'âge en fonction de la date de naissance
 
 
 
-function calculAge ($birth){
-    $now = date('Y');
-    return $now - $birth;
-}
+// function calculAge ($birth){
+//     $now = date('Y');
+//     return $now - $birth;
+// }
 
-echo calculAge(1986);
+// echo calculAge(1987);
 
