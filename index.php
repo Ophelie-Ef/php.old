@@ -9,11 +9,16 @@ dbug($_POST);
     ....
 */
 
-echo ('Votre nom est : '.$_POST['nom'].'.');
-echo ('<br>'.'Votre adresse email est : '.$_POST['email'].'.');
-echo ('<br>'.'Vous avez un niveau '.$_POST['niveau']);
-echo ('<br>'.'Vous nous avez suggeré : '.$_POST['commentaire']);
-echo ('<br>'.'Votre/vos compétence(s) est/sont : '.implode(", ",$_POST['competence']));
+
+
+if (isset($_POST['submitted'])):
+    echo ('Votre nom est : '.$_POST['nom'].'.');
+    echo ('<br>'.'Votre adresse email est : '.$_POST['email'].'.');
+    echo ('<br>'.'Vous avez un niveau '.$_POST['niveau']);
+    echo ('<br>'.'Vous nous avez suggeré : '.$_POST['commentaire']);
+    echo ('<br>'.'Votre/vos compétence(s) est/sont : '.implode(", ",$_POST['competence']));
+endif;
+
 
 
 ?>
