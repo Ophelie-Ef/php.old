@@ -21,7 +21,7 @@ require './fonctions.php';
 !==
 */
 
-$age = 20;
+// $age = 20;
 // if($age >= 18) {
 //     echo 'Peut voter.';
 // } else {
@@ -37,7 +37,7 @@ $age = 20;
 
 
 // $heure = 19;
-$heure = date('H');
+// $heure = date('H');
 
 // dd($heure);
 
@@ -76,10 +76,25 @@ $heure = date('H');
 
 // echo $vrai? 'Vrai' : 'False';
 
-$votes = 7500;
-$oldVotes = 1254;
-dbug($votes);
-($votes>$oldVotes) ? $votes-- : $votes++;
-dbug($votes);
+// $votes = 7500;
+// $oldVotes = 1254;
+// dbug($votes);
+// ($votes>$oldVotes) ? $votes-- : $votes++;
+// dbug($votes);
+
+$couleur = 'rose';
+switch($couleur){
+    case 'chartreuse':
+        echo 'Vous aimez Defakator';
+        break;
+    case 'cyan':
+        echo 'Votre couleur favorite est le cyan';
+        break;
+    case 'noir':
+        echo 'Vous êtes déprimant'; 
+        break;
+    default:
+    echo 'Fatal System Error ! Processus d\'autodestruction du PC enclenché...';
+};
 
 // require './index.view.php';
