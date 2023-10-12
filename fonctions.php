@@ -60,11 +60,23 @@ function dd($value) //dd pour debug and die
 
 // echo $calcul(25);
 
-function calcul (int|float $a , int|float  $b) : mixed
-{
-    return $a + $b;
-};
-// echo calcul (2, 5);
-// echo calcul ("2", 5);//ne fonctionne pas car char et pas int
+// function calcul (int|float $a , int|float  $b) : mixed
+// {
+//     return $a + $b;
+// };
+// // echo calcul (2, 5);
+// // echo calcul ("2", 5);//ne fonctionne pas car char et pas int
 
-echo calcul (2.6, 4);
+// echo calcul (2.6, 4);
+
+$x =5;
+$y=3;
+
+function calcul ($xPasseEnParametre){
+    $y=7;
+    return $xPasseEnParametre + $y;
+};
+
+echo calcul (5);
+
+dbug ($y);
