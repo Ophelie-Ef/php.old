@@ -51,19 +51,30 @@ $heure = date('H');
 // endif;
 
 
-$a = 20;
-$b = '5';
+// $a = 20;
+// $b = '5';
 
 // if ($b != 3) : //!= est le signe pour "différent de"
 //     echo 'La variable $b n\'est pas égale à 3 !';
 // endif;
 
 
-if ($b === 5) : //on a le retour non égale car le === induit une cimparaison d'égalité en valeur et en type (== : juste en valeur)
-    echo 'La variable $b est égale à 5 !';
-else:
-    echo 'La variable n\'est pas égale à 5 !';
-endif;
+// if ($b === 5) : //on a le retour non égale car le === induit une comparaison d'égalité en valeur et en type (== : juste en valeur)
+//     echo 'La variable $b est égale à 5 !';
+// else:
+//     echo 'La variable n\'est pas égale à 5 !';
+// endif;
+
+// $vrai = true;
+// $vrai = null;
+
+// if($vrai):
+//     echo 'Vrai';
+// else :
+//     echo 'Faux';
+// endif;
+
+
 
 
 // require './index.view.php';
