@@ -82,16 +82,16 @@ require './fonctions.php';
 // ($votes>$oldVotes) ? $votes-- : $votes++;
 // dbug($votes);
 
-$couleur = 'rose';
+$couleur = 'chartreuse';
 switch($couleur){
     case 'chartreuse':
         echo 'Vous aimez Defakator';
         break;
     case 'cyan':
-        echo 'Votre couleur favorite est le cyan';
+        echo 'Vous avez bon goût';
         break;
-    case 'noir':
-        echo 'Vous êtes déprimant'; 
+    case 'orange':
+        echo 'Vous êtes une carotte'; 
         break;
     default:
     echo 'Fatal System Error ! Processus d\'autodestruction du PC enclenché...';
