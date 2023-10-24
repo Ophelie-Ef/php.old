@@ -1,12 +1,8 @@
 <?php
 
-$uriPath = parse_url($_SERVER['REQUEST_URI'])['path'];
+require 'routes.php';
 
-$routes = [
-    '/' => 'controllers/index.php',
-    '/contact' => 'controllers/contact.php',
-    '/notes' => 'controllers/notes.php'
-];
+$uriPath = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 // $urlToController = match($uriPath){
 //     '/' =>  'controllers/index.php',
