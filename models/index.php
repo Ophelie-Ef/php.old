@@ -5,6 +5,10 @@ class Vehicule
     public $couleur;
     public $nom = 'Jon Doe';
 
+    function __construct()
+    {
+        echo 'Constructeur';
+    }
     function freiner()
     {
         echo 'Crissement de freins'.'<br>';
@@ -13,6 +17,6 @@ class Vehicule
 
 $voiture = new Vehicule();
 
-$voiture->freiner();
+// $voiture->freiner();
 
-echo $voiture->nom;
+// echo $voiture->nom;
