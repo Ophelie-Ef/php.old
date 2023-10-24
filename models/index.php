@@ -3,11 +3,11 @@
 class Vehicule
 {
     public $couleur;
-    public $nom = 'Jon Doe';
+    public $nom = 'Panda';
 
-    function __construct()
+    function __construct($nom)
     {
-        echo 'Constructeur';
+        echo $nom;
     }
     function freiner()
     {
@@ -15,7 +15,7 @@ class Vehicule
     }
 }
 
-$voiture = new Vehicule();
+$voiture = new Vehicule('Twingo');
 
 // $voiture->freiner();
 
