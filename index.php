@@ -1,7 +1,8 @@
 <?php
 require './fonctions.php';
 
-$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+
+$uriPath = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
     '/php' => 'controllers/index.php',
@@ -9,4 +10,11 @@ $routes = [
     '/php/notes' => 'controllers/notes.php'
 ];
 
-dbug($routes);
+$urlToController = match($uriPath){
+    '/' =>  'controllers/index.php',
+    '/contact' => 'controllers/contact.php'
+};
+
+require $urlToController;
+
+exit();
