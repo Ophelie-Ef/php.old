@@ -25,6 +25,7 @@ function urlToController($uriPath, $routes)
 
 function abort()
 {
+    http_response_code(404);
     require 'views/404.php';
     exit();
 }
