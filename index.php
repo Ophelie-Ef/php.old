@@ -8,3 +8,5 @@ $routes = [
     '/php/contact' => 'controllers/contact.php',
     '/php/notes' => 'controllers/notes.php'
 ];
+
+dbug($routes);
