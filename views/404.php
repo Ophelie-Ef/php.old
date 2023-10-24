@@ -6,6 +6,6 @@
     <title>404</title>
 </head>
 <body>
-    <h1>404 !!! Fatal System Error ! Deleting System32 ongoing 5%</h1>
+    <h1>404 !!! Explosion imminente !</h1>
 </body>
 </html>
